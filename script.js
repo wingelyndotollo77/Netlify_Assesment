@@ -12,7 +12,7 @@
       fullquestion:
         "Talk about how you made your site and why you chose the tools you did. Briefly explain one challenge you experienced in setting up this site and how you overcame it.",
       answer:
-        "A simple demo featuring Q&A tabs, a small blog, and a profile area, built with vanilla HTML/CSS/JS.",
+        "I use the basic HTML",
     },
     {
       question: "Question 2",
@@ -26,7 +26,22 @@
       fullquestion:
         "Rank your 5 favorite and 5 least favorite activities from this list: https://gist.github.com/laurajodz/592402a6336410377dee1a744af846ab",
       answer:
-        "A simple demo featuring Q&A tabs, a small blog, and a profile area, built with vanilla HTML/CSS/JS.",
+        "<br><h4>✅ Top 5 Favorite Activities:</h4>\n\
+          <ul>\n\
+          <li>Respond to 20+ support requests via email every day</li>\n\
+          <li>Work with a customer to figure out if Netlify's service can solve a particular workflow or integration challenge they have</li>\n\
+          <li>Dig through server logs to troubleshoot a customer's website behavior</li>\n\
+          <li>Debug a customer's build using a programming language and framework that you've never seen before</li>\n\
+          <li>Write and maintain Support Guides for our product</li>\n\
+          </ul>\n\
+          <h4>❌ Bottom 5 Least Favorite Activities:</h4>\n\
+          <ul>\n\
+          <li>Help manage communications during a service outage</li>\n\
+          <li>Respond to Netlify customers on Twitter</li>\n\
+          <li>Join a Zoom call with a VIP customer you have been helping via email, upon their request</li>\n\
+          <li>Engage multiple users at once via chat to answer their questions and troubleshoot problems</li>\n\
+          <li>Manage a Support team</li>\n\
+          </ul>",
     },
     {
       question: "Question 4",
