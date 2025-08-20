@@ -11,8 +11,7 @@
       question: "Question 1",
       fullquestion:
         "Talk about how you made your site and why you chose the tools you did. Briefly explain one challenge you experienced in setting up this site and how you overcame it.",
-      answer:
-        "I use the basic HTML",
+      answer: "I use the basic HTML",
     },
     {
       question: "Question 2",
@@ -21,7 +20,7 @@
       answer:
         "A simple demo featuring Q&A tabs, a small blog, and a profile area, built with vanilla HTML/CSS/JS.",
     },
-        {
+    {
       question: "Question 3",
       fullquestion:
         "Rank your 5 favorite and 5 least favorite activities from this list: https://gist.github.com/laurajodz/592402a6336410377dee1a744af846ab",
@@ -186,7 +185,9 @@
       if (!item) return;
       panel.innerHTML = "";
       const q = createElement("h3", "qa-question", { text: item.fullquestion });
-      const a = createElement("p", "qa-answer", { text: item.answer });
+      const a = createElement("div", "qa-answer", {
+        html: String(item.answer),
+      });
       panel.appendChild(q);
       panel.appendChild(a);
     }
