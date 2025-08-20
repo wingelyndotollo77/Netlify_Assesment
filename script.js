@@ -11,21 +11,23 @@
       question: "Question 1",
       fullquestion:
         "Talk about how you made your site and why you chose the tools you did. Briefly explain one challenge you experienced in setting up this site and how you overcame it.",
-      answer: "I use the basic HTML",
+      answer:
+        "<p>I use HTML and CSS, and Javascript for the site's interface and design and javascript for the sites functionalities.</p>",
     },
     {
       question: "Question 2",
       fullquestion:
         "What did you think of our service during the time you used it? Provide some constructive criticism or some features that impressed you.",
       answer:
-        "A simple demo featuring Q&A tabs, a small blog, and a profile area, built with vanilla HTML/CSS/JS.",
+        "<p>The service was very user-friendly, and I appreciated how simple it is to connect my GitHub repository to NEtlify and get the site deployed quickly.</p>\n\
+<p>Most of the Netlify features are straightforward and easy to understand. One thing that really impress me is the fact that it is very easy to use. However, error messages during build process is quite challenging maybe having it more detailed so that fixing issues could have been easier. Thank you.</p>",
     },
     {
       question: "Question 3",
       fullquestion:
         "Rank your 5 favorite and 5 least favorite activities from this list: https://gist.github.com/laurajodz/592402a6336410377dee1a744af846ab",
       answer:
-        "<br><h4>✅ Top 5 Favorite Activities:</h4>\n\
+        "<h4>✅ Top 5 Favorite Activities:</h4>\n\
           <ul>\n\
           <li>Respond to 20+ support requests via email every day</li>\n\
           <li>Work with a customer to figure out if Netlify's service can solve a particular workflow or integration challenge they have</li>\n\
@@ -47,42 +49,64 @@
       fullquestion:
         "Provide a link to documentation for a technical/developer-focused product, which you think are well done, and explain why you think they are well done.",
       answer:
-        "A simple demo featuring Q&A tabs, a small blog, and a profile area, built with vanilla HTML/CSS/JS.",
+        "<p>A good example of well-made technical documentation is Stripe’s API documentation. It’s easy to navigate, clearly written, and gives practical examples that show how to use each feature. <br><br>What makes it really useful is how it explains things in a simple way without leaving out important details. It also includes code samples in different languages, so developers can quickly copy and test them. Overall, it makes working with the API much easier, even for someone who is new to it.</p>",
     },
     {
       question: "Question 5",
       fullquestion:
         "Explain, in a couple of paragraphs, what you think are two major challenges around DNS configuration for less-technical customers hosting websites.",
       answer:
-        "A simple demo featuring Q&A tabs, a small blog, and a profile area, built with vanilla HTML/CSS/JS.",
+        "<p>One major challenge for less-technical customers is understanding how DNS works. Terms like A record, CNAME, TTL or MX can be confusing, and even a small mistake such as pointing to the wrong IP address can cause a website or email service to stop working.</p>\n\
+<p>Another common issue is DNS propagation. When changes are made to DNS settings, the updates do not take effect immediately. It can take several hours for the changes to spread across the internet, which often leads to confusion or concern, even when the configuration is correct.</p>",
     },
     {
       question: "Question 6",
       fullquestion:
         "A customer writes in to Support saying simply that their “site won’t build”. You have access to their build logs, and there you see this error: Build failed due to a user error: Build script returned non-zero exit code: 2. You have no more information than this and the site’s source repository is private so you cannot test the build yourself. How would you troubleshoot this issue? What steps would you take? Also, please compose your best customer-facing first response.",
       answer:
-        "A simple demo featuring Q&A tabs, a small blog, and a profile area, built with vanilla HTML/CSS/JS.",
+        "<p>Since the error only says “Build script returned non-zero exit code: 2,” and I can’t access the site’s code, my first step would be to review the full build logs for any extra clues. Often, there are warnings or error messages just before the failure that can point to what went wrong. <br><br> I would also check the build settings in the dashboard, such as the build command, environment variables, and any recent changes that could affect the build. Since I can’t run the build myself, I would focus on guiding the customer to test things on their side and help them narrow down the issue.</p>\n\
+<p><strong>This will be my best customer-facing first response:</strong></p>\n\
+<p>Hi there,</p>\n\
+<p>Thanks for reaching out. I checked your build logs and saw this error:</p>\n\
+<p>“Build script returned non-zero exit code: 2.”</p>\n\
+<p>This means the build process ran into a problem and could not complete. To help figure out what’s causing it, here are a few things you can check:</p>\n\
+<ul>\n\
+<li>Have you made any recent changes to your code, build script, or dependencies?</li>\n\
+<li>Can you try running the build locally to see if the same error happens?</li>\n\
+<li>Please double-check your build command and environment settings in your dashboard.</li>\n\
+</ul>\n\
+<p>If you can share more details from the build logs or any changes you’ve made recently, I’ll be happy to take another look.</p>\n\
+<p>Best,<br/>Wing</p>",
     },
     {
       question: "Question 7",
       fullquestion:
         "How would you set up an http 301 status redirect from “/netlify/anything” on your site, to https://www.google.com/search?q=anything. Please provide the redirect formatting here. Now, how about a proxy redirect? Please add that proxy redirect rule directly to your site!",
       answer:
-        "A simple demo featuring Q&A tabs, a small blog, and a profile area, built with vanilla HTML/CSS/JS.",
+        "<p>To set up an HTTP 301 redirect from <code>/netlify/anything</code> to <code>https://www.google.com/search?q=anything</code>, I use a redirect rule with a placeholder for the dynamic part (<code>:splat</code>). Here’s how i would format this using <code>_redirects</code> file:</p>\n\
+<pre><code>/netlify/*  https://www.google.com/search?q=:splat  301</code></pre>\n\
+<p>For a proxy redirect (where the browser URL stays the same, but the content is fetched from Google), I use a 200 status code. HEre is my _redirect rule syntax :</p>\n\
+<pre><code>/netlify/*  https://www.google.com/search?q=:splat  200</code></pre>",
     },
     {
       question: "Question 8",
       fullquestion:
         'Please attempt to deploy a function on our service. This need not be complicated. It could be "Hello World". Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot any issues you encountered.',
       answer:
-        "A simple demo featuring Q&A tabs, a small blog, and a profile area, built with vanilla HTML/CSS/JS.",
+        "<p>I used GitHub Codespaces to create and set up a simple &quot;Hello World&quot; function. The function was committed to a GitHub repository and deployed using Netlify’s CI/CD integration. I did not encounter any issues during the process. The function worked as expected, and I was able to access it successfully after deployment.</p>",
     },
     {
       question: "Question 9",
       fullquestion:
         "We understand you don't know anything about our internal procedures at this stage, but we want you to explain at a high level how you'd react to this situation: You receive a report of a severe security issue on www.netlify.com. You can't immediately confirm the report, so what steps might you take to investigate or substantiate the report? What might you say to the reporter, even though we haven't confirmed their assertion yet, that will instill confidence that our business is very concerned about security? You believe there is a reasonable chance the report is correct and the problem is very large and impactful. How might you escalate?",
       answer:
-        "A simple demo featuring Q&A tabs, a small blog, and a profile area, built with vanilla HTML/CSS/JS.",
+        "<p>If I received a report of a serious security issue, I would take it seriously right away. I’d review the details to understand what the issue might be and gather any clues from logs or public-facing systems. Even if I couldn’t confirm it, I’d flag it to the security team immediately and share everything I know so they can investigate further. If the issue seems big and possibly real, I would make sure it’s treated as high priority and escalated quickly.</p>\n\
+<p><strong>This will be my response to the reporter:</strong></p>\n\
+        <p>Hi there,</p>\n\
+<p>Thank you for reporting this. We take security very seriously at Netlify, and I appreciate you bringing this to our attention.</p>\n\
+<p>I’ve shared your report with our security team, and they’re looking into it now. We’ll follow up with any updates. If you have more details that can help us investigate, please feel free to share.</p>\n\
+<p>Thanks again for reaching out.</p>\n\
+<p>Best,<br/>Wing</p>",
     },
   ];
 
