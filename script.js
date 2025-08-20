@@ -21,7 +21,7 @@
       answer:
         "A simple demo featuring Q&A tabs, a small blog, and a profile area, built with vanilla HTML/CSS/JS.",
     },
-    {
+        {
       question: "Question 3",
       fullquestion:
         "Rank your 5 favorite and 5 least favorite activities from this list: https://gist.github.com/laurajodz/592402a6336410377dee1a744af846ab",
