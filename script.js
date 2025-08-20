@@ -38,10 +38,10 @@
           <h4>❌ Bottom 5 Least Favorite Activities:</h4>\n\
           <ul>\n\
           <li>Help manage communications during a service outage</li>\n\
-          <li>Respond to Netlify customers on Twitter</li>\n\
+          <li>Create video tutorials to help teach users a specific feature or use case</li>\n\
+          <li>Debug a customer's build using a programming language and framework that you've never seen before</li>\n\
+          <li>Set up your own copy of several site frameworks for debugging</li>\n\
           <li>Join a Zoom call with a VIP customer you have been helping via email, upon their request</li>\n\
-          <li>Engage multiple users at once via chat to answer their questions and troubleshoot problems</li>\n\
-          <li>Manage a Support team</li>\n\
           </ul>",
     },
     {
