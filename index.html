@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wingelyn Dotollo — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio and profile of Wingelyn Dotollo."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💼</text></svg>"
+    />
+  </head>
+  <body class="profile-page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="logo" aria-hidden="true">💼</span>
+          <h1 class="site-title">Wingelyn Dotollo</h1>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a class="nav-btn" href="#hero">About</a>
+          <a class="nav-btn" href="#q&a">Assessment Questions</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <section id="hero" class="hero">
+        <div class="hero-inner">
+          <div class="avatar avatar-xl" aria-hidden="true">W</div>
+          <h2 class="hero-title">Building helpful experiences on the web</h2>
+          <p class="hero-subtitle muted">
+            Developer and creator focused on clean UI, accessible UX, and
+            content that teaches.
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="section-block">
+        <h3>About</h3>
+        <p>
+          Hi, I’m Wingelyn. I enjoy crafting intuitive interfaces and writing
+          about how things work. I’m currently exploring modern web tooling and
+          building side projects that solve everyday problems.
+        </p>
+        <div class="skills">
+          <span class="skill-chip">HTML</span>
+          <span class="skill-chip">CSS</span>
+          <span class="skill-chip">JavaScript</span>
+          <span class="skill-chip">React</span>
+          <span class="skill-chip">Accessibility</span>
+          <span class="skill-chip">UI/UX</span>
+        </div>
+      </section>
+
+      <section id="q&a" class="section-block">
+        <h3>Assessment Questions & Answers</h3>
+        <div class="portfolio-grid">
+          <article class="portfolio-card">
+            <section
+              id="section-qa"
+              class="section is-active"
+              aria-labelledby="tab-qa"
+            >
+              <div class="qa-layout">
+                <div
+                  class="qa-tabs"
+                  role="tablist"
+                  aria-label="Questions"
+                  id="qa-tablist"
+                >
+                  <!-- Populated by script.js -->
+                </div>
+                <div
+                  class="qa-panel"
+                  id="qa-panel"
+                  tabindex="0"
+                  aria-live="polite"
+                >
+                  <!-- Populated by script.js -->
+                </div>
+              </div>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">
+          All Rights reserved © <span id="year-profile"></span> Wingelyn Dotollo
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
