@@ -12,7 +12,7 @@
       fullquestion:
         "Talk about how you made your site and why you chose the tools you did. Briefly explain one challenge you experienced in setting up this site and how you overcame it.",
       answer:
-        "<p>I use HTML and CSS, and Javascript for the site's interface and design and javascript for the sites functionalities.</p>",
+        "<p>I used HTML and CSS to build the structure and design of the site, and JavaScript to add functionality and interactivity. These tools were a good fit because they are lightweight, easy to use, and give me full control over how the site looks and behaves. <br><br>One challenge I faced was in the script.js file, where I was adding the questions and answers for the site. It took some trial and error to get the format and logic working correctly. I had to double-check the structure of the data and make sure the code was looping through the questions properly. Eventually, I fixed it by simplifying the way the questions were stored and using consistent keys in the objects.</p>",
     },
     {
       question: "Question 2",
